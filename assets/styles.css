@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.navGrid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template: repeat(4, auto) / repeat(3, auto);
+}
+
+.a, .b, .c {
+  background-color: #043a54;
+}
+
+.a img {
+  height: 150px;
+}
+
+.b {
+  display: grid;
+  grid-column: 2 / span 2;
+}
+
+.b ul {
+  list-style: none;
+  color: white;
+  text-align: left;
+  word-spacing: 15em;
+  font-family: 'Righteous', cursive;
+}
+
+.b li {
+  display: inline-block;
+  padding: 1%;
+  margin-top: 1.5em;
+  font-size: 30px;
+}
+
+.box {
+  box-shadow: 1px 1px 3px #333;
+  border-radius: 4px;
+  padding: 3%;
+  /* height: 400px; */
+}
+
+.box h2 {
+  font-family: 'Righteous', cursive;
+  padding: 1%;
+  margin: 1%;
+}
+
+.box p {
+  padding: 1%;
+  margin: 1%;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.design, .support, .consulting {
+  height: 400px;
+  padding: 1%;
+  margin: 1%;
+}
+
+.design {
+  background-image: url('./design.jpeg');
+  background-size: cover;
+  color: white;
+}
+
+.design p, .consulting p, .support p {
+  background: #333;
+  border-radius: 4px;
+  color: #eee;
+  opacity: .8;
+}
+.support {
+  background-image: url('./support.jpeg');
+  background-size: cover;
+}
+.consulting {
+  color: white;
+  background-image: url('./consulting.jpeg');
+  background-size: cover;
+}
+
+.services {
+  grid-column: 1 / span 3;
+  text-align: center;
+  font-size: 40px;
+  /* padding: 1em; */
+  box-shadow: none;
+  font-family: 'Righteous', cursive;
+  color: #043a54;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 1.5em;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+footer {
+  width: 100%;
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 5%;
+  margin-top: 10%;
+}
+
+footer ul {
+  list-style: none;
+  word-spacing: 2.5em;
+}
+
+footer li {
+  display: inline-block;
+}
+
+footer p {
+  background: #333;
+}
+
+footer .icons {
+  font-size: 50px;
+  word-spacing: 1em;
+  padding: 1%;
+}
+
+.fa-twitter-square,
+.fa-github-square {
+  color: white;
+}
+
+@media(max-width: 800px) {
+  .mainGrid {
+    grid-template-columns: 100%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .mainGrid p {
+    padding: 1%;
+    margin: 1%;
+  }
+  .box {
+    width: 100%;
+    box-shadow: none;
+    border-radius: none;
+  }
+  .design, .support, .consulting {
+    height: 550px;
+    padding: 0;
+    margin: 0;
+    background-position: center;
+  }
+  .services {
+    grid-column: 1;
+  }
+  .b ul {
+    margin-top: 5%;
+    margin-right: 10%;
+    text-align: right;
+  }
+  .b li {
+    display: block;
+    margin-top: 0;
+  }
+
+  footer p, footer .icons {
+    margin: 5%;
+    padding: 5%;
+  }
+}
+
+
